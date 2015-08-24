@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am currently a consultant for Red Hat, Inc. [NYSE: RHT](https://www.google.com/finance?cid=663462){:target="_blank"}. My main area of focus is in the Enterprise Integration space specializing in:
+I am currently a consultant for Red Hat, Inc. [NYSE: RHT](https://www.google.com/finance?cid=663462){:target="_blank"}. My main area of focus is in Enterprise Integration:
 
 * [Apache Camel][1]{:target="_blank"} (a highly extensible mediation/router library)
 * [Apache ActiveMQ][2]{:target="_blank"} (a superfast Java messaging server)
