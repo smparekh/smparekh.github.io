@@ -1,0 +1,29 @@
+# Site settings
+title: Shaishav Parekh
+email: shaishavparekh at gmail dot com
+
+description: Red Hatter | Computer Engineer | Hokie.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://shaishavparekh.com" # the base hostname & protocol for your site
+github_username:  smparekh
+linkedin_username: shaishavparekh
+
+
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: /:title/
+
+# Github stuff
+safe: true
+lsi: false
+source: .
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - CNAME
