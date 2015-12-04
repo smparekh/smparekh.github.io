@@ -1,4 +1,5 @@
 ---
+layout: plain
 title: Certify
 permalink: /.well-known/acme-challenge/YH9FAqQWYEqtr4VIioyjslipPEBwFHeVEsFsz4mMV1w
 ---
