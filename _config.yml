@@ -27,3 +27,5 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+include:
+    - cert.md
