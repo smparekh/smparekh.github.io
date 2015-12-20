@@ -9,6 +9,7 @@ I am currently a consultant for Red Hat, Inc. [NYSE: RHT](https://www.google.com
 * [Apache Camel][1]{:target="_blank"} (a highly extensible mediation/router library)
 * [Apache ActiveMQ][2]{:target="_blank"} (a superfast Java messaging server)
 * [Red Hat JBoss Fuse][3]{:target="_blank"} (a lightweight enterprise service bus)
+* [OSGi][7]{:target="_blank"} (modular system and a service platform for Java)
 
 Also have experience with:
 
@@ -26,3 +27,5 @@ Grab my resume: [PDF]()
 [4]: https://www.openshift.com/ "OpenShift"
 [5]: https://www.docker.com/ "Docker"
 [6]: http://lucene.apache.org/solr/ "Apache Lucene Solr"
+[7]: https://www.osgi.org/ "OSGi"
+
