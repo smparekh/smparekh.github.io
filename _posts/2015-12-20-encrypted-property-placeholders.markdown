@@ -9,7 +9,7 @@ Encrypted property placeholders are a great way to store and use database, API o
 To use the Jasypt functionality in Red Hat JBoss Fuse you have to export the JASYPT_ENCRYPTION_PASSWORD variable used to encrypt values. The jasypt-encryption and the camel-jasypt features should be installed by default in the standalone install. In Fabric mode your profile needs the camel-jasypt and the jasypt-encryption features installed.
 
 To check if the features are installed on your fuse instance you can run the following command:
-{% highlight shell %}
+{% highlight bash %}
 features:list -i | grep jasypt
 {% endhighlight %}
 
