@@ -19,7 +19,7 @@ Also have experience with:
 
 Alma Mater: Virginia Tech, Bachelor of Science, Computer Engineering, 2013.
 
-Grab my resume: [PDF]()
+Grab my resume: [PDF](/downloads/Resume.pdf)
 
 [1]: http://camel.apache.org/ "Apache Camel"
 [2]: http://activemq.apache.org/ "Apache ActiveMQ"
