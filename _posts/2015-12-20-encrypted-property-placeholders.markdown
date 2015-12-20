@@ -16,3 +16,4 @@ features:list -i | grep jasypt
 Karaf Shell:
 ![karaf_shell_jasypt.png](/images/karaf_shell_jasypt.png)
 
+[1]: http://jasypt.org/ "Jasypt"
