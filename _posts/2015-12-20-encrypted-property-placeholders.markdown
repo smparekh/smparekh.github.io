@@ -202,6 +202,8 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 Now you can store database, broker or API passwords in property files without them being in plaintext.
 
+Reference Docs: [Red Hat JBoss Fuse 6.2.1 Security Guide](https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Fuse/6.2.1/html/Security_Guide/FMQSecurityEncryptProperties.html)
+
 [1]: http://jasypt.org/ "Jasypt"
 [2]: http://sourceforge.net/projects/jasypt/files/jasypt/jasypt%201.9.2/jasypt-1.9.2-dist.zip/download "SourceForge"
 [3]: https://github.com/smparekh/camel-blueprint-encrypted "camel-blueprint-encrypted"
