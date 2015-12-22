@@ -127,7 +127,7 @@ The `cm` section specifies the name of the `.cfg` file used to populate properti
 
 The `enc` section configures the decryption settings for the encrypted properties. In the above example the `enc:property-placeholder` is configured with the same settings that we encrypted the property.
 
-Blueprint will now handle decrypting the property at Camel route startup. To verify you can run `mvn clean verify` on the sample project.
+Blueprint will now handle decrypting the property at Camel route startup. To verify you can run `mvn clean verify` on the sample project. Make sure you export the `JASYPT_ENCRYPTION_PASSWORD` before running the test as the password is required to decrypt successfully.
 {% highlight bash %}
 [mel-1) thread #0 - timer://foo] timerToLog                     INFO  The message contains Camel at 2015-12-21 22:14:37
 {% endhighlight %}
