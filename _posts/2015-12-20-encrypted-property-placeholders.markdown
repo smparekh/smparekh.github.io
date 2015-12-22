@@ -10,7 +10,7 @@ To use the Jasypt functionality in Red Hat JBoss Fuse you have to export the `JA
 
 ### Export the encryption password
 {% highlight bash %}
-[fedora@sparekh-dev-6 bin]$ export JASYPT_ENCRYPTION_PASSWORD=s3cr3t
+[fedora@sparekh]$ export JASYPT_ENCRYPTION_PASSWORD=s3cr3t
 {% endhighlight %}
 
 ### Verify Jasypt install on Fuse
@@ -35,7 +35,7 @@ Encrypt the word 'Camel' using the `encrypt.sh` script.
 
 Note: Your encrypted output will not be the same as mine.
 {% highlight bash %}
-[fedora@sparekh-dev-6 bin]$ ./encrypt.sh input="Camel" password=s3cr3t algorithm=PBEWITHMD5ANDDES
+[fedora@sparekh]$ ./encrypt.sh input="Camel" password=s3cr3t algorithm=PBEWITHMD5ANDDES
 
 ----ENVIRONMENT-----------------
 
@@ -138,7 +138,7 @@ Blueprint will now handle decrypting the property at Camel route startup. To ver
 {% endhighlight %}
 Full Test Output:
 {% highlight bash %}
-[fedora@sparekh-dev-6 bin]$ mvn clean verify
+[fedora@sparekh]$ mvn clean verify
 ...
 -------------------------------------------------------
  T E S T S
