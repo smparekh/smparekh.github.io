@@ -6,18 +6,19 @@ categories: camel fuse red hat property placeholder
 ---
 Encrypted property placeholders are a great way to store and use database, API or broker user IDs and passwords. Red Hat JBoss Fuse utilizes [Jasypt][1] Simplified Encryption to encrypt property values.
 
-To use the Jasypt functionality in Red Hat JBoss Fuse you have to export the `JASYPT_ENCRYPTION_PASSWORD` variable before starting the server. The `jasypt-encryption` and the `camel-jasypt` features should already be installed by default in the standalone Fuse install. In Fabric mode your profile needs the `camel-jasypt` and the `jasypt-encryption` features installed.
+To use the Jasypt functionality in Red Hat JBoss Fuse you have to export the `JASYPT_ENCRYPTION_PASSWORD` variable before starting the server. The `jasypt-encryption` and the `camel-jasypt` features should already be installed by default in the standalone Fuse install. In Fabric mode the `camel-jasypt` and the `jasypt-encryption` features need to be part of your profile.
 
 ### Export the encryption password
 {% highlight bash %}
 [fedora@sparekh-dev-6 bin]$ export JASYPT_ENCRYPTION_PASSWORD=s3cr3t
 {% endhighlight %}
+
 ### Verify Jasypt install on Fuse
 To check if the features are installed on your fuse instance you can run the following command in the karaf shell:
 {% highlight bash %}
 features:list -i | grep jasypt
 {% endhighlight %}
-<!--![karaf_shell_jasypt.png](/images/karaf_shell_jasypt.png)-->
+
 {% include figure.html src="/images/karaf_shell_jasypt.png" caption="Checking for Jasypt features in Karaf shell" %}
 
 Or you can also check in the Hawtio webconsole by navigating to the OSGi &rarr; Features tab:
