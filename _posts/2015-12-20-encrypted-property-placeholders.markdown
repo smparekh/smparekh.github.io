@@ -25,6 +25,10 @@ Or you can also check in the Hawtio webconsole by navigating to the OSGi &rarr; 
 {% include figure.html src="/images/hawtio_jasypt.png" caption="Checking for Jasypt features in Hawtio webconsole" %}
 
 ### Use encrypted properties in a Camel route
+I have modified the sample blueprint route based on the `camel-blueprint-archetype` to show a working camel route with encrypted properties. The project is located on my GitHub repositories page: [camel-blueprint-encrypted][3]
+
+The changes I made to the vanilla `camel-blueprint-archetype` are explained below.
+
 Before we set up a Camel route to decrypt a property we have to encrypt it. Download the Jasypt v1.9.2 binaries from [SourceForge][2]. After you unzip the project, head over to the bin directory.
 
 Encrypt the word 'Camel' using the `encrypt.sh` script.
@@ -53,7 +57,7 @@ orS/w2nwBZ7YoJCTqtp54g==
 
 {% endhighlight %}  
 
-There are some extra steps involved if you want to use encrypted properties in your Blueprint Camel routes. I have modified the sample blueprint route based on the `camel-blueprint-archetype` to show a working camel route with encrypted properties. The project is located on my GitHub repositories page: [camel-blueprint-encrypted][3]
+There are some extra steps involved if you want to use encrypted properties in your Blueprint Camel routes.
 
 First, add the Jasypt `dependency` and `Import-Package` information to the project pom.
 {% highlight xml %}
