@@ -53,9 +53,9 @@ orS/w2nwBZ7YoJCTqtp54g==
 
 {% endhighlight %}  
 
-There are some extra steps involved if you want to use encrypted properties in your Blueprint Camel routes. I have modified the sample blueprint route based on the `camel-blueprint-archetype`, located here: [camel-blueprint-encrypted][3] to show a working camel route with encrypted properties.
+There are some extra steps involved if you want to use encrypted properties in your Blueprint Camel routes. I have modified the sample blueprint route based on the `camel-blueprint-archetype` to show a working camel route with encrypted properties. The project is located on my GitHub repositories page: [camel-blueprint-encrypted][3]
 
-First, add the Jasypt dependencies and imports to the project pom.
+First, add the Jasypt `dependency` and `Import-Package` information to the project pom.
 {% highlight xml %}
 ...
 <dependency>
