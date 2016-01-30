@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bridging IBM WebSphere MQ and Apache ActiveMQ with Apache Camel"
-date: 2015-01-30 17:20:24
+date: 2016-01-30 17:20:24
 categories: camel fuse red hat ibm websphere mq activemq apache
 ---
 
