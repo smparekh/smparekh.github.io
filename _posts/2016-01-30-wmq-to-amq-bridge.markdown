@@ -54,15 +54,15 @@ For the camel route to be functional connection factories to both the IBM WebSph
 {% endhighlight %}
 
 The actual Camel route is simple, it consumes from the "websphere" endpoint and produces to the "activemq" endpoint
-{% highlight xml %}
+{% raw %}
 <camelContext trace="false" id="wmqToAmqContext" xmlns="http://camel.apache.org/schema/blueprint">
 	<route id="wmqToAmqBridge">
-		<from uri="websphere:queue:{{{ibm.queue.name}}}?mapJmsMessage=false" />
+		<from uri="websphere:queue:{ibm.queue.name}?mapJmsMessage=false" />
 		<log message="The message contains ${body}" />
-		<to uri="activemq:queue:{{{amq.queue.name}}}" />
+		<to uri="activemq:queue:{amq.queue.name}" />
 	</route>
 </camelContext>
-{% endhighlight %}
+{% endraw %}
 
 The "ibm.queue.name" and "amq.queue.name" properties need to be populated in the properties file.
 
