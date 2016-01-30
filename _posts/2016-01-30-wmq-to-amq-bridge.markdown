@@ -11,7 +11,7 @@ The route relies on populating properties from a file named "wmq.to.amq.cfg" con
 
 {% highlight xml %}
 <!-- Property Placeholder -->
-	<cm:property-placeholder persistent-id="wmq.to.amq" update-strategy="reload" />
+<cm:property-placeholder persistent-id="wmq.to.amq" update-strategy="reload" />
 {% endhighlight %}
 
 For the camel route to be functional connection factories to both the IBM WebSphere MQ and Apache ActiveMQ need to be configured.
@@ -57,14 +57,14 @@ The actual Camel route is simple, it consumes from the "websphere" endpoint and 
 {% highlight xml %}
 <camelContext trace="false" id="wmqToAmqContext" xmlns="http://camel.apache.org/schema/blueprint">
 	<route id="wmqToAmqBridge">
-		<from uri="websphere:queue:{{ibm.queue.name}}?mapJmsMessage=false" />
+		<from uri="websphere:queue:{{{ibm.queue.name}}}?mapJmsMessage=false" />
 		<log message="The message contains ${body}" />
-		<to uri="activemq:queue:{{amq.queue.name}}" />
+		<to uri="activemq:queue:{{{amq.queue.name}}}" />
 	</route>
 </camelContext>
 {% endhighlight %}
 
-The "ibm.queue.name" and "amq.queue.name" need to be populated in the properties file.
+The "ibm.queue.name" and "amq.queue.name" properties need to be populated in the properties file.
 
 Of course, a broad consumer can also be defined if one wants to consumer from a set of queues using a wildcard and produce to the another set of queues on the ActiveMQ side. In this case, a JMS header stating the destination consumed from could be used to point to the exact queue the message could be sent to.
 
