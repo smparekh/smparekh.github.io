@@ -71,6 +71,6 @@ Of course, a broad consumer can also be defined if one wants to consumer from a 
 
 A working route is available on my GitHub: [camel-wmq-amq][1]
 
-Note: OSGi/Java bundles are necessary for the IBM WebSphere MQ Classes required by this Camel route. They are specific to the version of WebSphere MQ deployed. They are available on the IBM WebSphere website for download.
+Note: OSGi/Java bundles are necessary for the IBM WebSphere MQ Classes required by this Camel route. They are specific to the version of WebSphere MQ deployed. They are available inside your IBM WebSphere install directory: IBM_MQ_INSTALL_DIR/java/lib/OSGi.
 
 [1]: https://github.com/smparekh/camel-wmq-amq "camel-wmq-amq"
