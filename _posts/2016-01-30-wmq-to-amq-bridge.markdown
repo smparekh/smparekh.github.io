@@ -58,9 +58,9 @@ The actual Camel route is simple, it consumes from the "websphere" endpoint and 
 {% highlight xml %}
 <camelContext trace="false" id="wmqToAmqContext" xmlns="http://camel.apache.org/schema/blueprint">
 	<route id="wmqToAmqBridge">
-		<from uri="websphere:queue:{{ "{{ ibm.queue.name " }}}}?mapJmsMessage=false" />
+		<from uri="websphere:queue:{{ "{{ibm.queue.name" }}}}?mapJmsMessage=false" />
 		<log message="The message contains ${body}" />
-		<to uri="activemq:queue:{{ "{{ amq.queue.name " }}}}" />
+		<to uri="activemq:queue:{{ "{{amq.queue.name" }}}}" />
 	</route>
 </camelContext>
 {% endhighlight %}
