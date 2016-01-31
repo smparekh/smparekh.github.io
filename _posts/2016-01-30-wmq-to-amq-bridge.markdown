@@ -7,14 +7,14 @@ categories: camel fuse red hat ibm websphere mq activemq apache
 
 One of the most common use cases for Apache Camel is to link two discrete endpoints. In this post I am demonstrating how to bridge an IBM WebSphere MQ Queue to an Apache ActiveMQ Queue.
 
-The route relies on populating properties from a file named "wmq.to.amq.cfg" configured first in the Blueprint XML.
+The route relies on populating properties from a file named "wmq.to.amq.cfg" configured in the Blueprint XML.
 
 {% highlight xml %}
 <!-- Property Placeholder -->
 <cm:property-placeholder persistent-id="wmq.to.amq" update-strategy="reload" />
 {% endhighlight %}
 
-For the camel route to be functional connection factories to both the IBM WebSphere MQ and Apache ActiveMQ need to be configured.
+For the camel route to be functional, connection factories to both the IBM WebSphere MQ and Apache ActiveMQ need to be configured.
 
 {% highlight xml %}
 ...
@@ -56,6 +56,7 @@ For the camel route to be functional connection factories to both the IBM WebSph
 The actual Camel route is simple, it consumes from the "websphere" endpoint and produces to the "activemq" endpoint.
 
 {% highlight xml %}
+...
 <camelContext trace="false" id="wmqToAmqContext" xmlns="http://camel.apache.org/schema/blueprint">
 	<route id="wmqToAmqBridge">
 		<from uri="websphere:queue:{{ "{{ibm.queue.name" }}}}?mapJmsMessage=false" />
