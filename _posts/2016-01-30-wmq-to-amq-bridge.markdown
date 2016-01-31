@@ -68,7 +68,7 @@ The actual Camel route is simple, it consumes from the "websphere" endpoint and 
 
 The "ibm.queue.name" and "amq.queue.name" properties need to be populated in the properties file.
 
-Of course, a broad consumer can also be defined if one wants to consumer from a set of queues using a wildcard and produce to the another set of queues on the ActiveMQ side. In this case, a JMS header stating the destination consumed from could be used to point to the exact queue the message could be sent to.
+<!--Of course, a wildcard consumer can also be defined if one wants to consume from a set of queues and produce to the another set of queues on the ActiveMQ side. In this case, a JMS header stating the destination consumed from the WebSphere MQ side could be used to point to the exact queue the message should be sent to on the ActiveMQ side.-->
 
 A working route is available on my GitHub: [camel-wmq-amq][1]
 
