@@ -35,7 +35,8 @@ public boolean isCreateCamelContextPerClass() {
 {% endhighlight %}
 
 If you override the method to return true CamelTestSupport will automatically reset any MockEndpoint in your routes before each test execution to ensure clean `mock:` endpoints.
-Snippet from (CamelTestSupport.java L209)[https://github.com/apache/camel/blob/camel-2.15.x/components/camel-test/src/main/java/org/apache/camel/test/junit4/CamelTestSupport.java#L209]
+
+Snippet from [CamelTestSupport.java L209](https://github.com/apache/camel/blob/camel-2.15.x/components/camel-test/src/main/java/org/apache/camel/test/junit4/CamelTestSupport.java#L209)
 
 {% highlight java %}
 } else {
@@ -65,7 +66,7 @@ Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 {% endhighlight %}
 
-Camel-Simple-CBR source code: https://github.com/smparekh/camel-simple-cbr
+Camel-Simple-CBR source code: [https://github.com/smparekh/camel-simple-cbr](https://github.com/smparekh/camel-simple-cbr)
 
 Note: When using `AdviceWith` with `isCreateCamelContextPerClass` all `mock:` endpoints might not be reset correctly. You can `@Before` JUnit annotation to reset them:
 
