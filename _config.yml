@@ -12,7 +12,7 @@ linkedin_username: shaishavparekh
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: Rogue
 permalink: /:year/:month/:title/
 
 # Github stuff
