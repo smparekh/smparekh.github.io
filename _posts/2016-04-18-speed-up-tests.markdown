@@ -66,9 +66,11 @@ Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 {% endhighlight %}
 
+The whole maven process is 155% faster! 
+
 Camel-Simple-CBR source code: [https://github.com/smparekh/camel-simple-cbr](https://github.com/smparekh/camel-simple-cbr)
 
-Note: When using `AdviceWith` with `isCreateCamelContextPerClass` all `mock:` endpoints might not be reset correctly. You can `@Before` JUnit annotation to reset them:
+Note: When using `AdviceWith` with `isCreateCamelContextPerClass` all `mock:` endpoints might not be reset correctly. You can use the `@Before` JUnit annotation to reset them:
 
 {% highlight java %}
 @EndpointInject(uri = "mock:foo")
