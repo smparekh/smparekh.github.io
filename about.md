@@ -4,14 +4,16 @@ title: About
 permalink: /about/
 ---
 
-I am currently a consultant for Red Hat, Inc. [NYSE: RHT](https://www.google.com/finance?cid=663462){:target="_blank"}. My main area of focus is in Enterprise Integration:
+I am a Ground Systems Engineer at [OneWeb, Ltd.](http://www.oneweb.net){:target="_blank"}. My main area of focus is integration between the different satellite domains, configuration management for satellite files and automation.
+
+I was a middleware consultant for Red Hat, Inc. [NYSE: RHT](https://www.google.com/finance?cid=663462){:target="_blank"} between January 2014 and July 2016. My main area of focus was in Enterprise Integration:
 
 * [Apache Camel][1]{:target="_blank"} (a highly extensible mediation/router library)
 * [Apache ActiveMQ][2]{:target="_blank"} (a superfast Java messaging server)
 * [Red Hat JBoss Fuse][3]{:target="_blank"} (a lightweight enterprise service bus)
 * [OSGi][7]{:target="_blank"} (modular system and a service platform for Java)
 
-Also have experience with:
+I also worked with:
 
 * [Red Hat OpenShift][4]{:target="_blank"}
 * [Docker][5]{:target="_blank"}
