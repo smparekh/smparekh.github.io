@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a Ground Systems Engineer at [OneWeb, Ltd.](http://www.oneweb.net){:target="_blank"}. My main area of focus is integration between the different satellite domains, configuration management for satellite files and automation.
+I am a Ground Systems Engineer at [OneWeb, Ltd](http://www.oneweb.net){:target="_blank"}. My main area of focus is integration between the different satellite domains, configuration management for satellite files and automation.
 
 I was a middleware consultant for Red Hat, Inc. [NYSE: RHT](https://www.google.com/finance?cid=663462){:target="_blank"} between January 2014 and July 2016. My main area of focus was in Enterprise Integration:
 
