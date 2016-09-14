@@ -2,7 +2,7 @@
 title: Shaishav Parekh
 email: shaishavparekh at gmail dot com
 
-description: Red Hatter | Computer Engineer | Hokie.
+description: Open Source Software Developer & a Hokie.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://shaishavparekh.com" # the base hostname & protocol for your site
 github_username:  smparekh
@@ -27,5 +27,3 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
-include:
-    - cert.md
