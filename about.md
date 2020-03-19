@@ -4,19 +4,23 @@ title: About
 permalink: /about/
 ---
 
-I am a Ground Systems Engineer at [OneWeb, Ltd](http://www.oneweb.net){:target="_blank"}. My main areas of focus are engineering analytics infrastructure, satellite management and scalability. I also work on integration between the different satellite domains, configuration management for satellite files and automation.
+I am a Senior Software Engineer at [OneWeb, Ltd](https://oneweb.world/){:target="_blank"}. My main areas of focus are engineering analytics infrastructure, satellite management and scalability. I also work on integration between the different satellite domains, configuration management for satellite files and automation.
 
 Excellent with:
 * [Vertx][5]{:target="_blank"} (tool-kit for building reactive applications on the JVM)
 * [gevent][6]{:target="_blank"} (coroutine library based on greenlet)
 * [Flask][7]{:target="_blank"} (Python microframework for web)
-* [Docker Swarm][8]{:target="_blank"} (It's docker on a cluster)
+* [Docker Swarm][8]{:target="_blank"} (It's docker, clustered)
 * [Ansible][9]{:target="_blank"} (Easy task automation)
+* [FastAPI][10]{:target="_blank"} (modern, fast, web framework for building APIs with Python 3.6+)
+* [asyncio][11]{:target="_blank"} (concurrency module for python)
 
 I have experience writing applications that interact with:
 * Mongo
 * MySQL
 * Elasticsearch
+* InfluxDB
+* Redis
 
 ## Past
 
@@ -40,4 +44,5 @@ Grab my resume: [PDF](/downloads/Resume.pdf)
 [7]: http://flask.pocoo.org/ "Flask"
 [8]: https://docs.docker.com/engine/swarm/ "Docker Swarm"
 [9]: https://www.ansible.com/ "Ansible"
-
+[10]: https://fastapi.tiangolo.com/ "FastAPI"
+[11]: https://docs.python.org/3/library/asyncio.html "asyncio"
