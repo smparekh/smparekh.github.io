@@ -24,7 +24,7 @@ I have experience writing applications that interact with:
 
 ## Past
 
-I was a middleware consultant for Red Hat, Inc. [NYSE: RHT](https://www.bloomberg.com/quote/RH:US){:target="_blank"} between January 2014 and July 2016. My main area of focus was in Enterprise Integration:
+I was a middleware consultant for Red Hat, Inc. (Now IBM) [NYSE: IBM](https://www.bloomberg.com/quote/IBM:US){:target="_blank"} between January 2014 and July 2016. My main area of focus was in Enterprise Integration:
 
 * [Apache Camel][1]{:target="_blank"} (a highly extensible mediation/router library)
 * [Apache ActiveMQ][2]{:target="_blank"} (a superfast Java messaging server)
@@ -33,7 +33,7 @@ I was a middleware consultant for Red Hat, Inc. [NYSE: RHT](https://www.bloomber
 
 Alma Mater: Virginia Tech, Bachelor of Science, Computer Engineering, 2013.
 
-Grab my resume: [PDF](/downloads/Resume.pdf)
+~~Grab my resume: [PDF](/downloads/Resume.pdf)~~ (OUTDATED, contact me on LinkedIn)
 
 [1]: http://camel.apache.org/ "Apache Camel"
 [2]: http://activemq.apache.org/ "Apache ActiveMQ"
