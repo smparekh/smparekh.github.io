@@ -33,7 +33,7 @@ I was a middleware consultant for Red Hat, Inc. (Now IBM) [NYSE: IBM](https://ww
 
 Alma Mater: Virginia Tech, Bachelor of Science, Computer Engineering, 2013.
 
-~~Grab my resume: [PDF](/downloads/Resume.pdf)~~ (OUTDATED, contact me on LinkedIn)
+Grab my resume: [PDF](/downloads/Resume.pdf), you can also reach out to me on [LinkedIn](https://linkedin.com/in/shaishavparekh)
 
 [1]: http://camel.apache.org/ "Apache Camel"
 [2]: http://activemq.apache.org/ "Apache ActiveMQ"
