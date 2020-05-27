@@ -7,7 +7,7 @@ categories: python3 dozer flask requests requests_cache pympler
 
 Recently, in an effort to find a supposed memory leak, I learned about [Dozer](https://pypi.org/project/Dozer/), a WSGI middleware to assist in tracking down memory leaks.
 
-All debugging and profiling are scaffolded in a demo project at: [dozer-demo]
+All debugging and profiling are scaffolded in a demo project at: [dozer-demo](https://github.com/smparekh/dozer-demo)
 
 ## Scenario
 
