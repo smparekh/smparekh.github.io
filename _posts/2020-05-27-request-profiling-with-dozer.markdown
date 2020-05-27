@@ -15,11 +15,11 @@ In production we have an app that runs a query against our Influx production clu
 
 ## Setting up for debugging
 
-The app is pretty simple in nature. It uses flask to front an api and has very small number of requirements. The first thing I needed to do is to see what object was being stored in memory. Using the excellent [pympler](https://pypi.org/project/Pympler/) project to get an insight at the python heap. 
+The app is pretty simple in nature. It uses flask to front an api and has very small number of requirements. The first thing I needed to do is to see what object was being stored in memory. I used the excellent [pympler](https://pypi.org/project/Pympler/) project to get an insight at the python heap. 
 
 I created a `heapdump` endpoint under the `debug` route to print an instant heap summary, you can try it yourself by running the dozer-demo project locally.
 
-{% highlight bash %}
+```
 http GET http://localhost:5000/debug/heapdump
 HTTP/1.0 200 OK
 Connection: close
@@ -44,10 +44,10 @@ types |   # objects |   total size
    wrapper_descriptor |        1268 |    108.97 KB
     getset_descriptor |        1361 |    106.33 KB
   function (__init__) |         756 |    106.31 KB
-{% endhighlight %}
+```
 
 Filter for a specific object type:
-{% highlight bash %}
+```
 http GET http://localhost:5000/debug/heapdump filter==bytes
 HTTP/1.0 200 OK
 Connection: close
@@ -58,13 +58,13 @@ Server: Werkzeug/1.0.1 Python/3.7.7
 types |   # objects |   total size
 ======= | =========== | ============
   bytes |         403 |     16.22 KB
-{% endhighlight %}
+```
 
 At a just spawned state everything looked nominal. I ran a few test queries that pulled about 200MB responses each to see how the heap reacted.
 
 **NOTE: in dozer-demo this has been replaced by a call to httpbin returning a static json response**
 
-{% highlight bash %}
+```
 http GET http://localhost:5000/json
 HTTP/1.0 200 OK
 Content-Length: 429
@@ -93,10 +93,10 @@ Server: Werkzeug/1.0.1 Python/3.7.7
         "title": "Sample Slide Show"
     }
 }
-{% endhighlight %}
+```
 
 And now another heapdump, to see bytes usage grow:
-{% highlight bash %}
+```
 http GET http://localhost:5000/debug/heapdump filter==bytes
 HTTP/1.0 200 OK
 Connection: close
@@ -107,7 +107,7 @@ Server: Werkzeug/1.0.1 Python/3.7.7
 types |   # objects |   total size
 ======= | =========== | ============
   bytes |         404 |     16.67 KB
-{% endhighlight %}
+```
 
 The response from httpbin is exactly 429 bytes and doing some quick maths: `16.67 - 16.22 = 0.45 KB` you can see the heap grow by approximately the response size.
 
