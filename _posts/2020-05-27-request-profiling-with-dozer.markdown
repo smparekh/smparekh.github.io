@@ -125,4 +125,4 @@ In formatting the influx response we also query a metadata api using requests (t
 In the end, I ended up removing the requests-cache project completely and implementing a function cache around the metadata api query using [cachetools](https://cachetools.readthedocs.io/en/stable/#cachetools.func.ttl_cache) to keep the same functionality without the memory related crashes.
 
 ## Lessons learned
-So yes, this mostly happened because of a lack of reading the ****ing manual but I did get to learn and mess around with two new libraries that I will inevitably use in the future. The dozer-demo is a very simple project aimed at helping others implement there own profiling.
+So yes, this mostly happened because of a lack of reading the \*\*\*\*ing manual but I did get to learn and mess around with two new libraries that I will inevitably use in the future. The dozer-demo is a very simple project aimed at helping others implement there own profiling.
