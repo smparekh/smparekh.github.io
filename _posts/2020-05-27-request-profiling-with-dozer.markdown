@@ -109,7 +109,7 @@ types |   # objects |   total size
   bytes |         404 |     16.67 KB
 ```
 
-The response from httpbin is exactly 429 bytes and doing some quick maths: `16.67 - 16.22 = 0.45 KB` you can see the heap grow by approximately the response size.
+The response from httpbin is exactly 429 bytes and doing some quick maths: `16.67 - 16.22 = 0.45 KB` you can see the heap grow by approximately the response size. In the production app's case the growth was a lot larger.
 
 Great! I now know what is being stored in memory but why is the Influx data (or in the demo's case - json response) sticking around?
 
