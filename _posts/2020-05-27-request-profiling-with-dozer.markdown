@@ -111,18 +111,18 @@ types |   # objects |   total size
 
 The response from httpbin is exactly 429 bytes and doing some quick maths: `16.67 - 16.22 = 0.45 KB` you can see the heap grow by approximately the response size.
 
-Great! I now know what is being stored in memory but why is the Influx data, or in the demos case json response, sticking around?
+Great! I now know what is being stored in memory but why is the Influx data (or in the demo's case - json response) sticking around?
 
 ## Going deeper with dozer
 At this point I needed to profile the request to see if I could pinpoint the cause. Using the dozer middleware library I could query my api and profile the call by visiting `_profiles` page and clicking on a profile:
 {% include figure.html src="/images/dozer_profiler_page.png" caption="Dozer profile" %}
 
 ## Root cause
-In formatting the influx response we also query a metadata api using requests (that is cached for five minutes) per influx query. The official influxdb-client package is a wrapper that uses the requests library. So using the requests-cache session caches _all_ responses and headers regardless of query  and regardless of size! 
+In formatting the influx response we also query a metadata api using requests (that is cached for five minutes) that is used per influx query to enrich the data. The official influxdb-python package is a wrapper that uses the requests library heavily. Using the requests-cache monkeypatches all requests session and caches **_all_** responses and headers regardless of query and regardless of size! 
 
 
 ## Fix
 In the end, I ended up removing the requests-cache project completely and implementing a function cache around the metadata api query using [cachetools](https://cachetools.readthedocs.io/en/stable/#cachetools.func.ttl_cache) to keep the same functionality without the memory related crashes.
 
 ## Lessons learned
-So yes, this mostly happened because of a lack of reading the ****ing manual but I did get to learn and mess around with two new libraries that I will inevitably use in the future.
+So yes, this mostly happened because of a lack of reading the ****ing manual but I did get to learn and mess around with two new libraries that I will inevitably use in the future. The dozer-demo is a very simple project aimed at helping others implement there own profiling.
