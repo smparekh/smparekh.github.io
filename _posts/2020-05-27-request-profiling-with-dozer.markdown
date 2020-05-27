@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Profiling requests with dozer"
+title: "Profiling requests with dozer and pympler"
 date: 2020-05-27 20:16:00
 categories: python3 dozer flask requests requests_cache pympler
 ---
