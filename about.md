@@ -4,9 +4,20 @@ title: About
 permalink: /about/
 ---
 
-I am a Senior Software Engineer at [OneWeb, Ltd](https://oneweb.world/){:target="_blank"}. My main areas of focus are engineering analytics infrastructure, satellite management and scalability. I also work on integration between the different satellite domains, configuration management for satellite files and automation.
 
-Excellent with:
+Currently pursuing and building technologies at [Quindar Inc.](https://quindar.space){:target="_blank"}. Working on democratizing space operations.
+
+Working with:
+* AWS
+* Python
+* Hasura
+* React
+* Terraform
+
+## Past
+
+Senior Software Architect at [OneWeb](https://oneweb.net){:target="_blank"} between July 2016 and August 2020. My main area of focus was in building out engineering analytics infrastructure using Python and Docker. Also worked with:
+
 * [Vertx][5]{:target="_blank"} (tool-kit for building reactive applications on the JVM)
 * [gevent][6]{:target="_blank"} (coroutine library based on greenlet)
 * [Flask][7]{:target="_blank"} (Python microframework for web)
@@ -15,16 +26,7 @@ Excellent with:
 * [FastAPI][10]{:target="_blank"} (modern, fast, web framework for building APIs with Python 3.6+)
 * [asyncio][11]{:target="_blank"} (concurrency module for python)
 
-I have experience writing applications that interact with:
-* Mongo
-* MySQL
-* Elasticsearch
-* InfluxDB
-* Redis
-
-## Past
-
-I was a middleware consultant for Red Hat, Inc. (Now IBM) [NYSE: IBM](https://www.bloomberg.com/quote/IBM:US){:target="_blank"} between January 2014 and July 2016. My main area of focus was in Enterprise Integration:
+Middleware consultant for Red Hat, Inc. (Now IBM) [NYSE: IBM](https://www.bloomberg.com/quote/IBM:US){:target="_blank"} between January 2014 and July 2016. My main area of focus was in Enterprise Integration:
 
 * [Apache Camel][1]{:target="_blank"} (a highly extensible mediation/router library)
 * [Apache ActiveMQ][2]{:target="_blank"} (a superfast Java messaging server)
